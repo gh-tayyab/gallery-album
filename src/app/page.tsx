@@ -1,7 +1,11 @@
-import Image from "next/image";
-
+import Gallery from "./gallery/page";
+export interface Upload {
+  event: "success"
+  info: { public_id: string }
+}
 export default function Home() {
   return (
-   <h1 className="bg-black">hello</h1>
+    <Gallery />
+
   );
 }
