@@ -29,4 +29,3 @@ const Album = async () => {
 }
 
 export default Album
-// px-5 py-4 grid grid-cols-1 items-center justify-center overflow-x-auto    gap-4
