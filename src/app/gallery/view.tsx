@@ -29,7 +29,7 @@ const View = ({ src, tag }: { src: string, tag: string[] }) => {
         }
       </div>
       {/* edit */}
-      <div className="absolute top-1 right-1 mr-8">
+      <div className="absolute bottom-1 left-1">
        <Album imageData={src} />
       </div>
     

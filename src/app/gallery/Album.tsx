@@ -12,7 +12,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { useState } from "react"
-import { IoIosAddCircle } from "react-icons/io"
+import { FaFolderPlus } from "react-icons/fa";
 import { FolderCreate } from "./action"
 const Album = ({imageData}:{imageData:string}) => {
     const [album,setAlbum]=useState('')
@@ -22,7 +22,7 @@ const Album = ({imageData}:{imageData:string}) => {
          <Dialog open={open} onOpenChange={setOpen} >
       <DialogTrigger asChild >
         <Button variant="ghost" className='p-0 m-0'>
-        <IoIosAddCircle className="w-8 h-8 cursor-pointer text-white hover:text-red-500 duration-300"/>
+        <FaFolderPlus className="w-8 h-8 cursor-pointer text-white hover:text-red-500 duration-300"/>
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
