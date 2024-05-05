@@ -2,9 +2,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Sidebar from "@/components/Sidebar";
+import { Poppins } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+
+const poppins = Poppins({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
+  subsets: ['latin']
+});
 
 export const metadata: Metadata = {
   title: "Yessy Album",
@@ -18,15 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-black text-white ">
-      <body className={inter.className} >
+      <body className={poppins.className} >
         <Navbar />
-        <div className="flex">
-          <div className="w-1/4">
-            <Sidebar />
-          </div>
-          <div className="w-full">{children}</div>
-        </div>
-        </body>
+        {children}
+      </body>
     </html>
   );
 }

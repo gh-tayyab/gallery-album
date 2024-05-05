@@ -2,6 +2,7 @@ import React from 'react'
 import cloudinary from 'cloudinary'
 import Upload from './upload'
 import View from './view'
+import Link from 'next/link'
 interface MyImage {
   public_id: string,
   tags: string[]
